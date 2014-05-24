@@ -9,7 +9,7 @@ use yii\widgets\ActiveForm;
  */
 $this->title = Yii::t('user', 'Register');
 $this->params['breadcrumbs'][] = $this->title;
-\dektrium\user\assets\Passfield::register($this);
+\travis83bui\user\assets\Passfield::register($this);
 $this->registerJs(sprintf('$("#user-password").passField({"locale": "%s"});', Yii::$app->language));
 ?>
 <h1><?= Html::encode($this->title) ?></h1>

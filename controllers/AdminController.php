@@ -11,7 +11,7 @@
 
 namespace travis83bui\user\controllers;
 
-use vinhphuc\user\models\UserSearch;
+use travis83bui\user\models\UserSearch;
 use yii\web\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;

@@ -29,7 +29,6 @@ class CleanController extends Controller
     public function actionTokens()
     {
         if ($this->confirm(\Yii::t('user', 'Are you sure?'), true)) {
-            /** @var \dektrium\user\models\User[] $users */
             $query = $this->module->factory->createUserQuery();
             $users = $query->where('confirmation_token IS NOT NULL')
                            ->orWhere('recovery_token IS NOT NULL')
@@ -59,7 +58,6 @@ class CleanController extends Controller
     {
         if ($this->confirm(\Yii::t('user', 'Are you sure?'))) {
             $count = 0;
-            /** @var \dektrium\user\models\User[] $users */
             $query = $this->module->factory->createUserQuery();
             $users = $query->where(['confirmation_time' => null])->all();
             foreach ($users as $user) {

@@ -88,7 +88,7 @@ class Module extends BaseModule
     /**
      * @var string
      */
-    public $emailViewPath = '@vinhphuc/user/views/mail';
+    public $emailViewPath = '@travis83bui/user/views/mail';
 
     /**
      * @var string|null Role that will be assigned to user on creation.
@@ -103,7 +103,7 @@ class Module extends BaseModule
     /**
      * @var Factory
      */
-    private $_factory = ['class' => '\vinhphuc\user\Factory'];
+    private $_factory = ['class' => '\travis83bui\user\Factory'];
 
     /**
      * @inheritdoc
@@ -113,7 +113,7 @@ class Module extends BaseModule
         parent::init();
 
         if (\Yii::$app instanceof ConsoleApplication) {
-            $this->controllerNamespace = 'vinhphuc\user\commands';
+            $this->controllerNamespace = 'travis83bui\user\commands';
         }
 
         \Yii::$app->getI18n()->translations['user*'] = [
@@ -140,7 +140,7 @@ class Module extends BaseModule
     public function setFactory(array $config)
     {
         if (!isset($config['class'])) {
-            $config['class'] = '\vinhphuc\user\Factory';
+            $config['class'] = '\travis83bui\user\Factory';
         }
         $this->_factory = $config;
     }

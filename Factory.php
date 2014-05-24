@@ -11,7 +11,7 @@
 
 namespace travis83bui\user;
 
-use vinhphuc\user\models\UserInterface;
+use travis83bui\user\models\UserInterface;
 use yii\base\Component;
 
 /**
@@ -24,17 +24,17 @@ class Factory extends Component
     /**
      * @var string
      */
-    public $userClass = '\vinhphuc\user\models\User';
+    public $userClass = '\travis83bui\user\models\User';
 
     /**
      * @var string
      */
-    public $profileClass = '\vinhphuc\user\models\Profile';
+    public $profileClass = '\travis83bui\user\models\Profile';
 
     /**
      * @var string
      */
-    public $userQueryClass = '\vinhphuc\user\models\UserQuery';
+    public $userQueryClass = '\travis83bui\user\models\UserQuery';
 
     /**
      * @var string
@@ -44,22 +44,22 @@ class Factory extends Component
     /**
      * @var string
      */
-    public $resendFormClass = '\vinhphuc\user\forms\Resend';
+    public $resendFormClass = '\travis83bui\user\forms\Resend';
 
     /**
      * @var string
      */
-    public $loginFormClass = '\vinhphuc\user\forms\Login';
+    public $loginFormClass = '\travis83bui\user\forms\Login';
 
     /**
      * @var string
      */
-    public $passwordRecoveryFormClass = '\vinhphuc\user\forms\PasswordRecovery';
+    public $passwordRecoveryFormClass = '\travis83bui\user\forms\PasswordRecovery';
 
     /**
      * @var string
      */
-    public $passwordRecoveryRequestFormClass = '\vinhphuc\user\forms\PasswordRecoveryRequest';
+    public $passwordRecoveryRequestFormClass = '\travis83bui\user\forms\PasswordRecoveryRequest';
 
     /**
      * Creates new User model.
@@ -74,7 +74,7 @@ class Factory extends Component
         $model = \Yii::createObject($config);
         if (!$model instanceof UserInterface) {
             throw new \RuntimeException(sprintf('"%s" must implement "%s" interface',
-                get_class($model), '\vinhphuc\user\models\UserInterface'));
+                get_class($model), '\travis83bui\user\models\UserInterface'));
         }
 
         return $model;

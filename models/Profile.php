@@ -86,6 +86,6 @@ class Profile extends ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne('\dektrium\user\models\User', ['id' => 'user_id']);
+        return $this->hasOne('\travis83bui\user\models\User', ['id' => 'user_id']);
     }
 }
