@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace vinhphuc\user\components;
+namespace travis83bui\user\components;
 
 use yii\web\User as BaseUser;
 

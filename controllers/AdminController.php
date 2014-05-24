@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace vinhphuc\user\controllers;
+namespace travis83bui\user\controllers;
 
 use vinhphuc\user\models\UserSearch;
 use yii\web\AccessControl;

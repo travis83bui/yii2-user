@@ -9,7 +9,7 @@
 * file that was distributed with this source code.
 */
 
-namespace vinhphuc\user;
+namespace travis83bui\user;
 
 use vinhphuc\user\models\UserInterface;
 use yii\base\Component;

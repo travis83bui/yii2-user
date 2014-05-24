@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace travis83bui\user\controllers;
 
 use yii\web\AccessControl;
 use yii\web\Controller;

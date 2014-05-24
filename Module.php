@@ -11,7 +11,7 @@
  * Editor: Vinh Phuc <travis83bui@gmail.com>
 */
 
-namespace vinhphuc\user;
+namespace travis83bui\user;
 
 use yii\base\Module as BaseModule;
 use yii\console\Application as ConsoleApplication;

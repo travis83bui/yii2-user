@@ -9,7 +9,7 @@
 * file that was distributed with this source code.
 */
 
-namespace dektrium\user\forms;
+namespace travis83bui\user\forms;
 
 use yii\base\Model;
 

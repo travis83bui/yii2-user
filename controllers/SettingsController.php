@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace travis83bui\user\controllers;
 
-use dektrium\user\models\Profile;
+use travis83bui\user\models\Profile;
 use yii\web\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;

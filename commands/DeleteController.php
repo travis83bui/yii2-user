@@ -9,7 +9,7 @@
 * file that was distributed with this source code.
 */
 
-namespace dektrium\user\commands;
+namespace travis83bui\user\commands;
 
 use yii\console\Controller;
 use yii\helpers\Console;

@@ -9,7 +9,7 @@
 * file that was distributed with this source code.
 */
 
-namespace vinhphuc\user\models;
+namespace travis83bui\user\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;

@@ -1,6 +1,6 @@
 <?php
 
-namespace dektrium\user\forms;
+namespace travis83bui\user\forms;
 
 use yii\base\Model;
 
