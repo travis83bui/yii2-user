@@ -56,4 +56,21 @@ class User extends BaseUser
             $this->identity->save(false);
         }
     }
+	
+	public function logout($destroySession = true)
+    {
+        $identity = $this->getIdentity();
+        if ($identity !== null && $this->beforeLogout($identity)) {
+            $this->switchIdentity(null);
+           // $id = $identity->getId();
+            //$ip = Yii::$app->getRequest()->getUserIP();
+            //Yii::info("User '$id' logged out from $ip.", __METHOD__);
+            if ($destroySession) {
+                \Yii::$app->getSession()->destroy();
+            }
+            $this->afterLogout($identity);
+        }
+
+        return $this->getIsGuest();
+    }
 }

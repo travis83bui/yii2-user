@@ -11,7 +11,7 @@
 
 namespace travis83bui\user\controllers;
 
-use yii\web\AccessControl;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\VerbFilter;
 
@@ -45,14 +45,14 @@ class AuthController extends Controller
                     ],
                 ]
             ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post']
-                ]
-            ]
         ];
     }
+	protected function verbs(){
+		return [
+			'logout'=>['POST']
+		];	
+	}
+	
 
     /**
      * Displays the login page.
@@ -64,7 +64,7 @@ class AuthController extends Controller
         $model = $this->module->factory->createForm('login');
 
         if ($model->load(\Yii::$app->getRequest()->post()) && $model->login()) {
-            return $this->goBack();
+            return $this->goHome();
         }
 
         return $this->render('login', [
@@ -79,7 +79,7 @@ class AuthController extends Controller
      */
     public function actionLogout()
     {
-        \Yii::$app->getUser()->logout();
+        \Yii::$app->user->logout();
 
         return $this->goHome();
     }
